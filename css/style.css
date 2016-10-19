@@ -1,0 +1,21 @@
+.app-wrapper{
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.app-banner{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.app-container{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: nowrap;
+}
