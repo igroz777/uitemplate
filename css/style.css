@@ -45,23 +45,19 @@ body{
 }
 
 
-.app-banner-left i{
-	margin-right: 10px;
-	color: #29b35b;
-	font-size: 20px;
-
-}
-
 .app-banner-left h2{
-	margin: 0px;
-	color: rgba(255,255,255,0.9);
-	
-}
-
-.app-banner-left h2:nth-child(3){
 	margin-left: 10px;
 	letter-spacing: 3px;
+	color: white;
 }
+
+.app-banner-left div{
+	margin-left: 10px;
+	letter-spacing: 3px;
+	color: #29b35b;
+	font-size: 17px;
+}
+
 
 
 
@@ -411,5 +407,11 @@ body{
 }
 
 .asset-profile-pic{
-	
-}
+	background-image: url(../assets/profile.jpg);
+	background-size: contain;
+	height: 135px;
+	margin-bottom: 10px;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+	border: 1px solid #bfc0c0;
+
+	}
