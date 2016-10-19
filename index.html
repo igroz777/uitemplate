@@ -14,11 +14,11 @@
 			</div>
 			<div class="app-banner-right">
 				<div class="app-banner-right-links">
-					<div>Home</div> 
+					<a href="#">Home</a> 
 					<div>|</div>
-					<div>Blog</div>
+					<a href="#">Blog</a>
 					<div>|</div>
-					<div>Settings</div>
+					<a href="#">Settings</a>
 					
 				</div>
 				<div class="app-banner-right-user">
@@ -107,16 +107,26 @@
     					<div>Profile Information</div>
     				</div>
     				<div class="page-profile-content">
-    					<div class="page-profile-picture">
-    						PICTURE HERE
+    					<div class="page-profile-picture-and-date">
+    						<div class="asset-profile-pic">Pic Here</div>
+    						<div>Joined: 12/11/1990</div>
     					</div>
     					<div class="page-profile-info"> 
-    					info here
     						<div class="page-profile-section">
-	    						<div class="page-profile-section-header"></div>
+	    						<div class="page-profile-section-header">
+	    							Personal Information
+	    						</div>
 	    						<div class="page-profile-section-detail">
-	    							<div class="page-profile-section-detail-key"></div>
-	    							<div class="page-profile-section-detail-value"></div>
+	    							<div class="page-profile-section-detail-key">Usename</div>
+	    							<div class="page-profile-section-detail-value">gilbert</div>
+	    						</div>
+	    						<div class="page-profile-section-detail">
+	    							<div class="page-profile-section-detail-key">Email</div>
+	    							<div class="page-profile-section-detail-value">gilbert.karadja@gmail.com</div>
+	    						</div>
+	    						<div class="page-profile-section-detail">
+	    							<div class="page-profile-section-detail-key">Github</div>
+	    							<div class="page-profile-section-detail-value"><a href="#">github.com/igroz777</a></div>
 	    						</div>
 	    					</div>
     					</div>
@@ -128,6 +138,8 @@
   		</div>
 		</div>		
 	</div>
+
+	
 	<script>
 		var popupButton = document.getElementsByClassName("app-banner-right-user")[0];
     popupButton.addEventListener("click", function(event){
