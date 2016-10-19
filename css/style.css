@@ -287,3 +287,32 @@ body{
 	background: #eeecec;
 	height: 100%;
 }
+
+.app-page-profile{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-left: 30px;
+	margin-top: 30px;
+	padding-bottom: 20px;
+	border: 1px solid #dbdada;
+	border-top: 3px solid #dbdada;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+	background: white;
+	width: 600px;
+}
+
+.page-profile-header{
+	width: 100%;
+	background: gray;
+
+}
+
+.page-profile-content{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+
