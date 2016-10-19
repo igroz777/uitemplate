@@ -1,16 +1,144 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>uiTemplate - Home</title>
+	<title>UI Home</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div class="app-wrapper">
+	<div class="app-main-wrapper">
 		<div class="app-banner">
-			
+			<div class="app-banner-left">
+				<i class="fa fa-gg fa-2x"></i>
+				<h2>Sample</h2>
+				<h2>Dashboard</h2>
+			</div>
+			<div class="app-banner-right">
+				<div class="app-banner-right-links">
+					<div>Home</div> 
+					<div>|</div>
+					<div>Blog</div>
+					<div>|</div>
+					<div>Settings</div>
+					
+				</div>
+				<div class="app-banner-right-user">
+					<div class="app-banner-right-username">
+						<div>gilbert</div>
+						<div>&or;</div>
+					</div>
+				</div>
+				<div class="app-popup-profile">
+					<div class="app-popup-profile-wrapper">
+						<div class="app-popup-profile-userIcon">
+							<div class="app-popup-profile-icon">
+								<i class="fa fa-user"></i>
+							</div>
+							<div class="app-popup-profile-user">
+								gilbert
+							</div>
+						</div>
+
+						<div class="app-popup-profile-item">
+							<div class="app-popup-profile-lorem">
+								Check Inbox
+							</div>
+						</div>
+
+						<div class="app-popup-profile-item">
+							<div class="app-popup-profile-manage">
+								Manage Account
+							</div>
+						</div>
+
+						<div class="app-popup-profile-item">
+							<div class="app-popup-profile-logout">
+								Logout
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="app-container">
-			
-		</div>
+			<div class="app-sidebar">
+				<ul>
+					<li>
+						<a href="#">
+						<div>Overview</div>
+						
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<div>Booking</div>
+						
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<div>Room Management</div>
+						
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<div>Customers</div>
+						
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<div>Reports</div>
+						
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<div>Manage Account</div>
+						
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="app-page-host">
+    			<router-view></router-view>
+  		</div>
+		</div>		
 	</div>
+	<script>
+		var popupButton = document.getElementsByClassName("app-banner-right-user")[0];
+    popupButton.addEventListener("click", function(event){
+      let popupContainer = document.getElementsByClassName("app-popup-profile")[0];
+      if(popupContainer.style.visibility=="visible"){
+        document.getElementsByClassName("app-popup-profile")[0].style.opacity = 0;
+        document.getElementsByClassName("app-popup-profile")[0].style.visibility = "hidden";
+        
+      }else{
+        document.getElementsByClassName("app-popup-profile")[0].style.opacity = 1;
+        document.getElementsByClassName("app-popup-profile")[0].style.visibility = "visible";
+        
+      }
+      console.log("div called");
+      event.stopPropagation();
+    });
+
+    
+    document.getElementsByTagName("body")[0].addEventListener("click", function(event){
+        document.getElementsByClassName("app-popup-profile")[0].style.opacity = 0;
+        document.getElementsByClassName("app-popup-profile")[0].style.visibility = "hidden";
+        console.log("body called");
+        
+      
+    });
+
+    document.getElementsByClassName("app-popup-profile")[0].addEventListener("click", function(event){
+      
+        
+        console.log("popup called");
+        event.stopPropagation();
+      
+    });
+	</script>
 </body>
 </html>
