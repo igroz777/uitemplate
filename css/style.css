@@ -304,7 +304,7 @@ body{
 	margin-left: 30px;
 	margin-top: 30px;
 	padding-bottom: 20px;
-	border: 1px solid #dbdada;
+	border: 1px solid #bfc0c0;
 	border-top: 3px solid #dbdada;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.05);
 	background: white;
@@ -313,12 +313,18 @@ body{
 
 .page-profile-header{
 	width: 100%;
-	background: gray;
+	background: #dedede;
+	font-size: 20px;
+	color: #464646;
+}
 
+.page-profile-header div{
+	margin: 5px;
 }
 
 .page-profile-content{
-	margin-right: 20px;
+	margin-left: 20px;
+	margin-top: 20px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -349,6 +355,7 @@ body{
 	justify-content: flex-start;
 	align-items: flex-start;
 	padding-bottom: 15px;
+	margin-bottom: 15px;
 	border-bottom: 1px solid #cecece;
 }
 
@@ -356,7 +363,8 @@ body{
 	font-size: 17px;
 	font-weight: 900;
 	margin-bottom: 10px;
-	margin-top: 20px;
+	
+	color: #3f3f3f;
 }
 
 .page-profile-section-detail{
@@ -368,11 +376,27 @@ body{
 	margin-bottom: 7px;
 }
 
+.page-profile-section-detail>a{
+	margin-left: 15px;
+	background: #29b35b;
+	border-radius: 2px;
+	cursor : pointer;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1.5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border: #1f8744;
+	font-size: 12px;
+}
+
 .page-profile-section-detail-key{
 	color: #848383;
 	
 	font-size: 14px;
-	width: 80px;
+	width: 120px;
 }
 
 .page-profile-section-detail-value{
